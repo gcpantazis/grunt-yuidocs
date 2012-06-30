@@ -4,14 +4,19 @@ Custom Grunt task that generates YUIDocs.
 
 ##How to use
 
-In your grunt.js:
+* Install with: ```npm install grunt-yuidocs```.
+* Call ```grunt.loadNpmTasks('grunt-yuidocs')``` in grunt.js
 
+* In your grunt.js config:
+
+	```
 	yuidocs: {
 		js: {
 			sourcePath: /path/to/js
 			outputPath: /path/to/docs
 		}
 	}
+	```
 
 
 ##Changelog
