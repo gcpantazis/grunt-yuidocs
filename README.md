@@ -21,6 +21,7 @@ Custom Grunt task that generates YUIDocs.
 
 ##Changelog
 
+* v0.1.1 Update Logging
 * v0.1.0 Initial release
 
 

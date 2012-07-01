@@ -1,7 +1,7 @@
 {
   "name": "grunt-yuidocs",
   "description": "Grunt plugin for generating YUIDocs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/gcpantazis/grunt-yuidocs",
   "author": {
     "name": "George Pantazis",
@@ -32,11 +32,11 @@
   "keywords": [
     "gruntplugin"
   ],
-  "_id": "grunt-yuidocs@0.1.0",
+  "_id": "grunt-yuidocs@0.1.1",
   "optionalDependencies": {},
   "_engineSupported": true,
   "_npmVersion": "1.1.15",
   "_nodeVersion": "v0.6.14",
   "_defaultsLoaded": true,
-  "_from": "grunt-yuidocs@>= 0.1.0"
+  "_from": "grunt-yuidocs@>= 0.1.1"
 }

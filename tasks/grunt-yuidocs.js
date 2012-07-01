@@ -26,6 +26,7 @@ module.exports = function(grunt) {
 			outdir: this.data.outputPath,
 			port: 3000,
 			nocode: false,
+			quiet: true,
 			project: { 
 				name: 'YUIDoc',
 				description: 'YUIDoc documentation tool written in Javascript',
@@ -42,9 +43,14 @@ module.exports = function(grunt) {
 
 		if (!options.parseOnly) {
 			var builder = new Y.DocBuilder(options, json);
+
+			grunt.log.writeln('Start YUIDoc compile...');
+			grunt.log.writeln('Scanning: ' + options.paths.join(', '));
+			grunt.log.writeln('Output: ' + options.outdir);
+			
 			builder.compile(function() {
 				var endtime = (new Date).getTime();
-				Y.log('Completed in ' + ((endtime - starttime) / 1000) + ' seconds' , 'info', 'yuidoc');
+				grunt.log.writeln('YUIDocs completed in ' + ((endtime - starttime) / 1000) + ' seconds' , 'info', 'yuidoc');
 			});
 		}
 
