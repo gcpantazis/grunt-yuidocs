@@ -1,6 +1,6 @@
 # grunt-yuidocs
 
-Custom Grunt task that generates YUIDocs.
+Grunt task that generates YUIDocs documentation for your code.
 
 ##How to use
 
