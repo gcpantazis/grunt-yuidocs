@@ -12,6 +12,7 @@ Grunt task that generates YUIDocs documentation for your code.
 	```
 	yuidocs: {
 		js: {
+			logo: /path/to/logo.png // optional
 			sourcePath: /path/to/js
 			outputPath: /path/to/docs
 		}
@@ -21,8 +22,9 @@ Grunt task that generates YUIDocs documentation for your code.
 
 ##Changelog
 
-* v0.1.1 Update Logging
-* v0.1.0 Initial release
+# v0.1.2 Adding an option to specify a project logo.
+* v0.1.1 Update Logging.
+* v0.1.0 Initial release.
 
 
 ## License
