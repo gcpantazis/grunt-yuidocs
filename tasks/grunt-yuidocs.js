@@ -16,6 +16,14 @@ module.exports = function(grunt) {
 		// This is an asyncronous task.
 		var done = this.async();
 
+		var logoUrl = 'http://yuilibrary.com/img/yui-logo.png';
+
+		if ( this.data.logo ) {
+			if ( typeof this.data.logo === 'string' ) {
+				logoUrl = grunt.file.expandFileURLs(this.data.logo)[0];
+			}
+		}
+
 		var options = { 
 			external: { 
 				data: 'http://yuilibrary.com/yui/docs/api/data.json' 
@@ -30,9 +38,8 @@ module.exports = function(grunt) {
 			project: { 
 				name: 'YUIDoc',
 				description: 'YUIDoc documentation tool written in Javascript',
-				version: '0.3.14',
 				url: 'http://github.com/yui/yuidoc/issues',
-				logo: 'http://yuilibrary.com/img/yui-logo.png' 
+				logo: logoUrl
 			} 
 		}
 
